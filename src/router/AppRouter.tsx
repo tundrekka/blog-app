@@ -1,6 +1,6 @@
 import React, { Suspense, useState } from 'react'
 import {
-   BrowserRouter as Router,
+   HashRouter as Router,
    Switch,
    Route,
    Redirect,
