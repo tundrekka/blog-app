@@ -5,6 +5,7 @@ import { IPostCard } from 'types/types'
 import { Card } from 'components/PostCard.styles'
 import { useSendDataToContext } from 'hooks/useSendDataToContext'
 import { memo } from 'react'
+import { PaginationPosts } from 'components/PaginationPostsButton'
 
 
 const SidebarContainer = styled.aside`
@@ -36,6 +37,9 @@ export const AdminSidebar: React.FC = memo(() => {
                        <PostCard path={`/admin/update/${post.id}`} sidebar={true} margin="0 0 1em 0" {...post} />
                     </GridCol>
                  ))}
+            <GridCol phone={12}>
+               <PaginationPosts />
+            </GridCol>   
          </GridContainer>
       </SidebarContainer>
    )

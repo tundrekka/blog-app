@@ -66,7 +66,7 @@ export const LoginScreen: React.FC = () => {
                      <Input onChange={handleInputChange} value={email} autoComplete="off" type="email" placeholder="email" name="email" id="email" />
                   </div>
                   <div>
-                     <Input onChange={handleInputChange} value={password} type="password" placeholder="password" name="password" id="email" />
+                     <Input onChange={handleInputChange} value={password} type="password" placeholder="password" name="password" id="password" />
                   </div>
                   <div>
                      <ButtonBlock type="submit">Login</ButtonBlock>

@@ -85,7 +85,7 @@ export const AppRouter: React.FC<IProps> = ({setThemeMode}) => {
          }
          <div id="footerHeightLazyLoad" style={{height: '1.5rem'}}></div>
          <ErrorBoundary>
-            <Suspense fallback={`espera titan ta calgando el footer cabron`}>
+            <Suspense fallback={null}>
                <LazyLoad>
                   <Footer />
                </LazyLoad>
