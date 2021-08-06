@@ -1,3 +1,4 @@
+import moment from 'moment'
 import { Link } from 'react-router-dom'
 import { IPostCard } from 'types/types'
 import { Card, Title, Date, Excerpt } from './PostCard.styles'
@@ -25,10 +26,10 @@ export const PostCard: React.FC<IProps> = ({
          <Link to={path} className="card-container">
             <Title className="title">{title}</Title>
 
-            <Date className="date">{date}</Date>
+            {/* <Date className="date">{date}</Date> */}
+            <Date className="date">{moment(date).format('MMM Do YY')}</Date>
 
             <Excerpt className="excerpt">{excerpt}</Excerpt>
-
             <p className="continue-reading-link">Continue Reading...</p>
          </Link>
       </Card>

@@ -6,7 +6,7 @@ export const loadPosts: () => Promise<IPostCard[]> = async () => {
    try {
       const postsSnap = await db
          .collection(`${DbRoot.dbRoot}`)
-         .orderBy('date', 'asc')
+         .orderBy('date', 'desc')
          .limit(2)
          .get()
       lastDocument = postsSnap.docs[postsSnap.docs.length - 1] || null
@@ -45,7 +45,7 @@ export const paginationNext: IPaginationProps = async (
    setIsPostsLoading(true)
    const postsSnap = await db
       .collection(`${DbRoot.dbRoot}`)
-      .orderBy('date', 'asc')
+      .orderBy('date', 'desc')
       .startAfter(lastDocument)
       .limit(2)
       .get()

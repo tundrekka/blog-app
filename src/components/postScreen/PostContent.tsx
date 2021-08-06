@@ -1,3 +1,4 @@
+import moment from 'moment'
 import styled from 'styled-components'
 import { IPostCardWihoutId } from 'types/types'
 
@@ -35,8 +36,7 @@ export const PostContent: React.FC<IProps> = ({post}) => {
          <PurpleBackground>
             <Title>{post.title}</Title>
             <hr />
-            <Date>{post.date}</Date>
-
+            <Date className="date">{moment(post.date).format('MMM Do YY')}</Date>
             <PostMainContent>
                {/* <div style={{whiteSpace: 'pre'}}> */}
                <div style={{whiteSpace: 'break-spaces'}}>
