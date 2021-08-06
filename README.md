@@ -1,26 +1,34 @@
 # Blog app
 
 
-## characteristics of react used
+## Some characteristics of react used
 
-made with typescript
-
-* code splitting (React.lazy, <Suspense fallback={} />, <ErrorBoundary />)
-* better perfomance with React.memo and useMemo
-* custom hook to communicate with Context
-* createContext, useContext
+* Code splitting (React.lazy, ```<Suspense fallback={} />, <ErrorBoundary />```)
+* Better perfomance with React.memo and useMemo
+* Custom hooks
+* CreateContext, useContext
 * useState, useEffect, (useRef)
 
 ### styled components 
 
-* defaultTheme with typescript (auto-completion in any location)
-* interface props form some styled-components
-* dinamyc grid column system
+* DefaultTheme with typescript (auto-completion in any location)
+* Interface props form some styled-components
+* Dinamyc grid column system
 * ThemeProvider
-
-### typescript
 
 ### react-router-dom
 
-* <Router>, swich...
 * useParams
+* useHistory
+* Protected and private routes
+
+### Firestore DB
+### Firebase Auth
+
+## General characteristics
+
+* Pagination
+* LazyLoaded footer
+* Toggle Light/Dark theme
+* On mobile, the footer will hide if you scroll down, but when scrolling up it will appear again
+* Typescript
